@@ -33,4 +33,4 @@ If not all of the inputs have been filled in, disable the submit button.
 
 ## When you've completed the test
 
-Create a pull request against this repository with the completed code in your repository.
+Fork this repository with the completed code and send me a pull request.
