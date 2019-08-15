@@ -1,6 +1,6 @@
 # Front end developer test
 
-Create an html5 compliant page verified [here](https://validator.w3.org/#validate_by_input) that displays an html form, with an input that accepts an email, an input that accepts a first name, an input that accepts a last name, and a submit button.
+Create an html5 compliant page verified [here](https://validator.w3.org/#validate_by_input) that displays an html form, with an input that accepts an email, an input that accepts a first name, an input that accepts a last name, and a submit button. Errors are ok as long as there is a good reason for them.
 
 The form should be easily modified to function as an overlay.
 
