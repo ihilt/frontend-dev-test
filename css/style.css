@@ -1,0 +1,71 @@
+h1 {
+  text-align: center;
+}
+form {
+  width: 70%;
+  margin-left: 15%;
+  text-align: center;
+}
+input {
+  padding: 3px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+input:focus::-webkit-input-placeholder {
+  color: rgba(71, 91, 207, 0.555);
+  font-style: italic;
+}
+input:focus::-moz-placeholder {
+  color: rgba(71, 91, 207, 0.555);
+  font-style: italic;
+}
+input:focus:-ms-input-placeholder {
+  color: rgba(71, 91, 207, 0.555);
+  font-style: italic;
+}
+input:focus::placeholder {
+  color: rgba(71, 91, 207, 0.555);
+  font-style: italic;
+}
+button {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 100%;
+}
+#email {
+  width: 100%;
+}
+#first_name {
+  width: 40%;
+}
+#last_name {
+  width: 40%;
+}
+table {
+  margin-left: 15%;
+  width: 70%;
+}
+@media only screen and (max-width: 578px) {
+  #first_name {
+    width: 100%;
+  }
+  #last_name {
+    width: 100%;
+  }
+  button:hover {
+    background-color: #c41c1c;
+    color: white;
+  }
+  button:focus {
+    background-color: #fda624;
+    color: white;
+  }
+  button:active {
+    background-color: #ff00b3;
+    color: white;
+  }
+  button:disabled {
+    background-color: #0894b8;
+    color: white;
+  }
+}

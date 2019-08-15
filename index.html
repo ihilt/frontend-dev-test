@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Front-End Test</title>
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+    <body>
+        <h1 class="text-center">Compliant Page</h1>
+        <form id='form' method = 'post'>
+            <label for="email">Email Address: </label>
+            <input type="text" name ="email" placeholder="Your Email Address" id="email" required onkeyup="disable(this)">
+            <br/>
+            <label for="first_name">First Name: </label>
+            <input type="text" name ="first_name" placeholder="Your First Name" id="first_name" required onkeyup="disable(this)">
+            <label for="last_name">Last Name: </label>
+            <input type="text" name ="last_name" placeholder="Your Last Name" id="last_name" required onkeyup="disable(this)">
+            <br/>
+            <button id ="submit" type = "button" onclick="displayInput()" value="clickme" disabled>Submit</button>
+        </form>
+
+        <table id="table" style="display: none;border: 2px solid black">
+            <tr>
+                <td id="td11"></td>
+            </tr>
+            <tr>
+                <td id="td12"></td>
+            </tr>
+            <tr>
+                <td id="td13"></td>
+            </tr>
+        </table>
+    <script>
+        function disable(txt) {
+            var submit = document.getElementById('submit');
+            var firstName = document.getElementById('first_name');
+            var lastName = document.getElementById('last_name');
+            var email = document.getElementById('email');
+            var filter = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+            if (firstName.value != '' && lastName.value != '' && email.value != '' ) {
+                if (filter.test(email.value)) {
+                    submit.disabled = false;
+                } 
+            }
+            else {
+                submit.disabled = true;
+            }
+        }
+        function displayInput() {
+            var x ="First Name : " + document.getElementById("first_name").value;
+            var y ="Last Name : " + document.getElementById("last_name").value;
+            var z ="Email Address : " + document.getElementById("email").value;
+        
+            document.getElementById("td11").innerHTML = x;
+            document.getElementById("td12").innerHTML = y;
+            document.getElementById("td13").innerHTML = z;
+        
+            document.getElementById("table").style.display = "block";
+
+        } 
+    </script>
+    </body>
+</html>
