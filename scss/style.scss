@@ -1,0 +1,82 @@
+$color_1: rgba(71, 91, 207, 0.555);
+$color_2: white;
+$background_color_1: #c41c1c;
+$background_color_2: #fda624;
+$background_color_3: #ff00b3;
+$background_color_4: #0894b8;
+
+h1 {
+	text-align: center;
+}
+form {
+	width: 70%;
+	margin-left: 15%;
+	text-align: center;
+}
+input {
+	padding: 3px;
+	margin-bottom: 10px;
+	margin-top: 10px;
+	&:focus {
+		&::-webkit-input-placeholder {
+			color: $color_1;
+			font-style: italic;
+		}
+		&::-moz-placeholder {
+			color: $color_1;
+			font-style: italic;
+		}
+		&:-ms-input-placeholder {
+			color: $color_1;
+			font-style: italic;
+		}
+		&::placeholder {
+			color: $color_1;
+			font-style: italic;
+		}
+	}
+}
+button {
+	margin-top: 10px;
+	margin-bottom: 10px;
+	width: 100%;
+}
+#email {
+	width: 100%;
+}
+#first_name {
+	width: 40%;
+}
+#last_name {
+	width: 40%;
+}
+table {
+	margin-left: 15%;
+	width: 70%;
+}
+@media only screen and (max-width: 578px) {
+	#first_name {
+		width: 100%;
+	}
+	#last_name {
+		width: 100%;
+	}
+	button {
+		&:hover {
+			background-color: $background_color_1;
+			color: $color_2;
+		}
+		&:focus {
+			background-color: $background_color_2;
+			color: $color_2;
+		}
+		&:active {
+			background-color: $background_color_3;
+			color: $color_2;
+		}
+		&:disabled {
+			background-color: $background_color_4;
+			color: $color_2;
+		}
+	}
+}
