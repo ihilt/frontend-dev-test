@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Front End Developer Test</title>
+    <meta name="description" content="Wilderness Agency developer test.">
+    <link rel="stylesheet" href="./usrDetail.css">
+    <script src="./usrDetail.js"></script>
+</head>
+
+<body onload="func_onLoadAction()" onresize="func_UpdateFlow()">
+    <h1 id="id_userDetailHeader_h1"> 
+            Front End Developer Test
+        </h1>
+    <div id="id_userDetailOverlay_div">
+        <form id="id_userDetailForm_form" action="/action_page.php">
+            <div class="class_userDetailFlow">
+                <table class="class_userDetailTable">
+                    <tr>
+                        <td class="class_userDetailLabel">
+                            <label for="id_emailAddress_input">E-mail:</label>
+                        </td>
+                        <td>
+                            <input class="class_userDetailInput" type="email" id="id_emailAddress_input" name="userEmailAddress" placeholder="Enter your email address" /> </td>
+                    </tr>
+                </table>
+            </div>
+            <div id="id_userDetail_div" class="class_userDetailName">
+                <div class="class_userDetailName">
+                    <table class="class_userDetailTable">
+                        <tr>
+                            <td class="class_userDetailLabel">
+                                <label for="id_firstName_input">First Name:</label>
+                            </td>
+                            <td>
+                                <input class="class_userDetailInput" type="text" id="id_firstName_input" name="userFirstName" placeholder="Enter your firstName" /> </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="class_userDetailName">
+                    <table class="class_userDetailTable">
+                        <tr>
+                            <td class="class_userDetailLabel">
+                                <label for="id_lastName_input">Last Name:</label>
+                            </td>
+                            <td>
+                                <input class="class_userDetailInput" type="text" id="id_lastName_input" name="UserLastName" placeholder="Enter your lastName" /> </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div id="id_userSubmit_div" class="class_userDetailFlow">
+                <button class="class_userSubmit" id="id_userSubmit_button" type="button" onclick="func_userDetailOnSubmit()">Submit</button>
+            </div>
+        </form>
+        <details id="id_testComments_details">
+            <summary id="id_testComment_summary">Wilderness Agency - Front End Developer Test [Aug 2019]. </summary>
+            <div id="id_testComment_div">
+                <h3>Comments</h3>
+                <ul>
+                    <li>Screen Width below 578px assumed screen=browser window</li>
+                    <li>Color selection was proof of concept not esthetic appeal</li>
+                    <li>Never used a CSS preprocessor, sass looks neat but I choose not to learn it for this small project </li>
+                    <li>In addition webpack is interesting but overkill for this project without using a tool like sass that would increase the import complexity</li>
+                    <li>Note: This test was entitled "Front end developer" and I was under impression that you needed a backend developer.</li>
+                    <li>I appreciate the opportunity. Thanks, Kent</li>
+                </ul>
+            </div>
+        </details>
+    </div>
+</body>
+
+</html>

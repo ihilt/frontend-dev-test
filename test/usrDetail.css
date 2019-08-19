@@ -1,0 +1,126 @@
+/* User Detail CSS Styles*/
+
+#id_userDetailOverlay_div {
+    display: flex;
+    flex-flow: column nowrap;
+    flex: 1 1;
+    flex-basis: auto;
+    padding: 10px 40px 10px 40px;
+    margin: 0px 10px;
+    border: 1px solid darkgreen;
+    background-color: rgba(239, 239, 239, 0.47);
+    z-index: 2;
+}
+
+#id_testComments_details {
+    display: block;
+    padding: 20px 0px 0px 0px;
+    /* add space from button */
+    font-style: italic
+}
+
+#id_testComment_summary {
+    cursor: pointer;
+}
+
+#id_userDetailHeader_h1 {
+    color: #03b918;
+    text-shadow: .03em .02em rgba(0, 0, 0);
+}
+
+.class_userDetailFlow {
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.class_userDetailTable {
+    border: "0";
+    width: 100%;
+}
+
+.class_userDetailLabel {
+    width: 90px;
+}
+
+.class_userDetailName {
+    display: flex;
+    flex-Direction: row;
+    flex-wrap: nowrap;
+    padding: 5px 0px 5px 0px;
+}
+
+.class_userDetailName {
+    flex: 1 1;
+    flex-basis: auto;
+}
+
+.class_userDetailInput {
+    width: 100%;
+    padding: 1px;
+    margin: 0px;
+    flex: 1 1 0;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+.class_userDetailInput:focus {
+    box-shadow: 3px 3px 3px black;
+}
+
+::-webkit-input-placeholder {
+    //  color: peachpuff;
+    font-size: 13px;
+    font-style: italic
+}
+
+::-moz-placeholder {
+    //  color: peachpuff;
+    font-size: 13px;
+    font-style: italic
+}
+
+:-ms-input-placeholder {
+    //color: peachpuff;
+    font-size: 13px;
+    font-style: italic
+}
+
+::placeholder {
+    //color: peachpuff;
+    font-size: 13px;
+    font-style: italic
+}
+
+.class_userSubmit {
+    box-sizing: border-box;
+    padding: 5px;
+    border-radius: 5px;
+    box-shadow: 3px 3px 3px black;
+    background: rgba(109, 248, 7, 0.82);
+    flex: 1 1;
+    flex-basis: auto;
+    font-size: medium;
+    font-weight: bolder;
+}
+
+.class_userSubmit:hover {
+    background: #2e98f4
+}
+
+.class_userSubmit:focus:hover {
+    background: #2e98f4
+}
+
+.class_userSubmit:focus {
+    background: #03b918
+}
+
+.class_userSubmit:active {
+    background: #89c5fa;
+    box-shadow: 3px 3px 3px black inset;
+}
+
+.class_userSubmit:disabled {
+    background: #a7b2a7
+}
