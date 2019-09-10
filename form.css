@@ -1,0 +1,170 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+#page-content .content * {
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+#page-content {
+    width: 100%;
+}
+
+#page-content .content {
+    width: calc(100% - 2em);
+    padding: 100px 1em;
+    max-width: 800px;
+    margin: auto;
+    overflow: hidden;
+}
+
+#page-content .content form#main-submission-form {
+    width: 100%;
+    padding: 0;
+    transition: all 2s;
+    display: block;
+}
+
+form#main-submission-form .form-group {
+    width: 100%;
+    border-bottom: 1px solid #333;
+    margin-bottom: 2em;
+    padding-bottom: 0;
+    display: flex;
+    position: relative;
+    font-size: 1em;
+}
+
+form#main-submission-form .form-flex {
+    display: initial;
+}
+
+form#main-submission-form .form-group input, form#main-submission-form .form-group label {
+    line-height: 1em;
+    font-size: .9em;
+    transition: all .75s;
+    padding: .25em 0;
+}
+
+form#main-submission-form .form-group input {
+    width: 100%;
+    border: none;
+    box-sizing: border-box;
+    padding-left: 6em;
+}
+                        
+form#main-submission-form .form-group input::placeholder {
+    color: #999;
+}
+
+form#main-submission-form .form-group input[name="email"] {
+    padding-left: 3.7em;
+}
+
+form#main-submission-form .form-group:focus-within input {
+    padding-left: 0;
+}
+
+form#main-submission-form .form-group label {
+    font-weight: bold;
+    position: absolute;
+    pointer-events: none;
+    user-select: none;
+    top: .2em;
+    left: .25em;
+    white-space: nowrap;
+    width: 0;
+}
+
+form#main-submission-form .form-group:focus-within label {
+    font-size: .7em;
+    top: -.75em;
+    left: 0em;
+    font-weight: bold;
+}
+
+form#main-submission-form .form-group input:focus {
+    outline: none;
+}
+
+form#main-submission-form .form-group.valid {
+    position: relative;
+}
+
+form#main-submission-form .form-group.valid::after {
+    content: "\2713";
+    position: absolute;
+    font-weight: bold;
+    right: 0;
+    top: .2em;
+    color: #2a6;
+    background: #fff;
+    padding: 0 .25em;
+}
+
+form#main-submission-form button[type="submit"] {
+    width: 100%;
+    display: block;
+    padding: .5em 1em;
+    border-radius: 2px;
+    background: transparent;
+    border: 1px solid #000;
+    box-sizing: border-box;
+}
+
+form#main-submission-form button[type="submit"]:disabled {
+    cursor: not-allowed;
+    color: #777;
+    background: #ffefef;
+}
+
+form#main-submission-form button[type="submit"]:hover:not(:disabled) {
+    cursor: pointer;
+    background: #efffef;
+}
+
+form#main-submission-form button[type="submit"]:focus {
+    background: #dedeff;
+    outline: none;
+}
+
+form#main-submission-form button[type="submit"]:active {
+    background: #ffffef
+}
+
+form#main-submission-form.remove {
+    transform: translateY(-100vh);
+    opacity: 0;
+    height: 0;
+}
+
+#page-content .content div.feedback {
+    border: 1px solid #777;
+    border-radius: 2px;
+    background: #eee;
+    padding: 0 1em;
+    opacity: 0;
+    transition: all .5s ease;
+}
+
+#page-content .content div.feedback.show {
+    opacity: 1;
+}
+
+@media screen and ( min-width : 578px ) {
+
+    form#main-submission-form .form-flex {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    form#main-submission-form .form-flex .form-group:first-child {
+        margin-right: 2em;
+    }
+
+    form#main-submission-form .form-group input, form#main-submission-form .form-group label {
+        font-size: 1em;
+    }
+
+}
